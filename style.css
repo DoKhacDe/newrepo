@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner nav {
+    width: 100%;
+    height: 100px;
+    background: white;
+}
+.logo {
+    padding-left: 100px;
+    line-height: 100px;
+}
+.banner nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+.banner nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 100px;
+    color: black;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+.banner nav ul {
+    float: right;
+    padding-right: 100px;
+}
+.active, .active:hover{
+    color: #fb5849;
+    transition: 0.2s;
+}
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    line-height: 100px;
+    cursor: pointer;
+     display: none;
+}
+#check {
+    display: none;
+}
+@media  (max-width:1160px){
+    .logo {
+        font-size:30px;
+        padding-left: 30px;
+        
+    }
+  
+    nav ul li a {
+        font-size: 16px;
+        /* display: none; */
+    }
+}
+@media  (max-width:1060px ){
+    .banner .checkbtn {
+        display: block;
+    }
+    .banner ul {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: white;
+        top:100px;
+        left: -250vh;
+        text-align: center;
+        transition: all 0.5s;
+        border-top: 1px solid rgb(194, 189, 189);
+        border-bottom: 1px solid rgb(194, 189, 189);
+    }
+    .banner nav ul li {
+        display: block;
+    }
+    .banner nav ul li a {
+        font-size: 20px;
+    }
+    .banner.active , .active:hover {
+        background: none;
+    }
+    .banner #check:checked ~ul{
+        left: 0;
+    }
+}
+.content {
+    width: 100%;
+    padding: 0;
+    height: 700px;
+}
+.bg-left {
+    width: 33%;
+    float: left;
+    
+}
+.bg-left img {
+    width:100%;
+    height: 650px;
+    position: relative;
+}
+.logo-white {
+    position: absolute;
+    width: 200px;
+}
+.logo-white img {
+    top:-370px;
+    left: 80px;
+    width: 250px;
+    height: auto;
+}
+.logo-white button {
+    width: 170px;
+    height: 40px;
+    top: -250px;
+    left: 120px;
+    position: absolute;
+    border: 0;
+    background:white;
+    border-radius: 3px;
+    color: #fb5849;
+}
+.bg-right {
+    width: 67%;
+    float: right;
+    margin-top:-16px ;
+    
+}
+/* .carousel-inner img{
+    width: 600px;
+    height: 650px;
+    
+}
+.carousel-inner {
+    display: flex;
+    width: 100%;
+} */
+
+.carousel-item {
+    height: 100vh;
+    min-height: 650px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    
+  }
+  .content2{
+      width: 100%;
+  }
+  .text1-left {
+    width: 50%;
+    float: left;
+}
+  .text1-left p{
+      color: #fb5849;
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 100%; 
+}
+.text1-left h2{ 
+    font-weight:bold; 
+    margin-left: 100px;
+    width: 50%; 
+}
+ .txt p{  
+    margin-left: 100px;
+    width: 80%; 
+}
+ .txt a {
+    text-decoration: none;
+}
+.img-food {
+    width: 100%;
+    margin-left: 100px;
+
+}
+.text-right {
+    width: 50%;
+    
+    
+}
+.text-right img {
+    margin-top: 100px;
+    padding-left: 50px;
+    position: absolute;
+}
+.icon-play {
+    padding-top: 250px;
+    margin-left: 250px;
+}
+.icon-play img{
+    width: 100px;
+    margin-top: 100px;
+    position: relative;
+}
+.content3 {
+    width: 100%;
+    margin-top: 700px;
+    
+}
+.menu h2, p{ 
+    font-weight:bold; 
+    margin-left: 100px;
+    width: 30%; 
+}
+.slide-menu {
+    margin-top: 40px;
+    padding: 0 ;
+}
+.slide-menu img{
+    padding-left: 40px;
+    width: 300px;
+}
+.content4 {
+    width: 100%;
+    margin-top: 100px;
+   
+}
+.list h2, p{ 
+    font-weight:bold; 
+    margin-left: 35%;
+    width: 30%; 
+    text-align: center;
+}
+
+.list-chef{
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+}
+.chef1 ,.chef2, .chef3{
+    width: 380px;
+    border: 1px solid #fb5849;
+    text-align: center;
+    margin-left: 30px;  
+    border-radius: 3px;
+}
+.chef1:hover ,.chef2:hover, .chef3 :hover{
+    color: #fb5849;
+}
